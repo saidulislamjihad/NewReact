@@ -9,10 +9,8 @@ function Clock() {
     const updateTime = () =>{
       let time = new Date().toLocaleTimeString();
       setCurrentTime(time); 
-    } 
-  
+    }  
     setInterval( updateTime , 1000 );
-    
   
     return (
       <>
@@ -21,4 +19,4 @@ function Clock() {
     )
   }
   
-  export default Clock
+  export default Clock;
