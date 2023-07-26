@@ -18,12 +18,21 @@ class SecondClock extends React.Component {
         });
     }
 
+    handleClick = ()=>{
+        this.setState( {
+            locale: 'bn-BD',
+        });
+    }
 
     render(){
+        const {date , locale} = this.state;
         return (
-            <h1>
-                Hello{this.props.children} {this.state.date.toLocaleTimeString(this.props.locale)}
-            </h1>
+            <>
+                <h1>
+                    Hello {date.toLocaleTimeString(locale)}
+                </h1>
+                <button onClick={this.handleClick}>Click Me!</button>
+            </>
         )
     }
 }
