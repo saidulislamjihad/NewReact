@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import React from 'react';
+import Button from './Button';
 
 class SecondClock extends React.Component {
     state = {date: new Date()};
@@ -29,9 +30,9 @@ class SecondClock extends React.Component {
         return (
             <>
                 <h1>
-                    Hello {date.toLocaleTimeString(locale)}
+                    Class Base React Watch {date.toLocaleTimeString(locale)}
                 </h1>
-                <button onClick={this.handleClick}>Click Me!</button>
+                <Button/>
             </>
         )
     }

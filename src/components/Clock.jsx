@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import React from 'react';
-import './Clock.css';
 
 function Clock() {
     let time = new Date().toLocaleTimeString();
@@ -14,7 +13,7 @@ function Clock() {
   
     return (
       <>
-        <h1>Hello {currenttime}</h1>
+        <h1>Function Base React Watch {currenttime}</h1>
       </>
     )
   }
