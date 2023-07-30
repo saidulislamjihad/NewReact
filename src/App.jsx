@@ -5,8 +5,6 @@ import Clock from './components/Clock.jsx'
 import SecondClock from './components/ClassBase.jsx'
 
 function App() {
-  
-
   return (
     <>
       <Clock/>
