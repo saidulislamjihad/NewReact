@@ -13,7 +13,7 @@ function Clock() {
   
     return (
       <>
-        <h1>Function Base React Watch {currenttime}</h1>
+        <h1>Function {currenttime}</h1>
       </>
     )
   }

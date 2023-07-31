@@ -31,12 +31,12 @@ class SecondClock extends React.Component {
         return (
             <>
                 <h1>
-                    Class Base React Watch {date.toLocaleTimeString(locale)}
+                    Class {date.toLocaleTimeString(locale)}
                 </h1>
                 {locale === 'bn-BD' ? (
-                    <Button change={this.handleClick} locale="en-US" show={false}/>
+                    <Button change={this.handleClick} locale="en-US" show={false} enable/>
                 ):(
-                    <Button change={this.handleClick} locale="bn-BD" show={true}/>
+                    <Button change={this.handleClick} locale="bn-BD" show={true} enable={false}/>
                 )}
             </>
         )
